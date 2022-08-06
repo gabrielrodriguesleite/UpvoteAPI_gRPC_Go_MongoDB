@@ -9,3 +9,7 @@ An API for Upvote Write in Go With MongoDB and gRPC technologies
 - [ ] gRPC connection
   - [ ] server definition
   - [ ] cliente definition
+
+- [ ] Tests
+
+- [ ] Documentation
