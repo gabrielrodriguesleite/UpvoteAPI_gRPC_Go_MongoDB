@@ -12,7 +12,7 @@ Run `docker-compose up` to turn on services (db)
 
 ## Todo:
 
-- [ ] MongoDB connection
+- [X] MongoDB connection
 
 - [ ] Protobuf definition
 
