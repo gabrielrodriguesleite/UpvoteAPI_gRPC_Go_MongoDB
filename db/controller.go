@@ -9,3 +9,8 @@ func Create(email string, score int) error {
 	s := Vote{email, score}
 	return Insert("vote", s)
 }
+
+func Get() (votes []Vote, err error) {
+
+	return List("vote")
+}
