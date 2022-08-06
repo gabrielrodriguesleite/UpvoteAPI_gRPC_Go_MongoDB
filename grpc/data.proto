@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package vote;
+
+option go_package = "grpc/vote";
+
+message Vote {
+  string email = 1;
+  int32 score = 2;
+}
+
+message UpvoteRequest {
+  Vote vote = 1;
+}
+
+message UpvoteResponse {
+  Vote vote = 1;
+}
+
+service UpvoteService {
+  rpc Upvote (UpvoteRequest) returns (stream UpvoteResponse) {};
+}
+
