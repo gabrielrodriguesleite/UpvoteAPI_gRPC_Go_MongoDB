@@ -2,13 +2,15 @@
 
 An API for Upvote Write in Go With MongoDB and gRPC technologies
 
-# Usage
+## Usage
 
 **Important: This project needs docker and docker-compose to run**
 
 Run `docker-compose up` to turn on services (db)
 
-# Todo:
+---
+
+## Todo:
 
 - [ ] MongoDB connection
 
