@@ -2,6 +2,8 @@
 
 An API for Upvote Write in Go With MongoDB and gRPC technologies
 
+# Todo:
+
 - [ ] MongoDB connection
 
 - [ ] Protobuf definition
