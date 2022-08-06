@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"upvote/db"
+)
 
 func main() {
 	fmt.Println("server on...")
+	err := db.Create("k.cogabriel@gmail.com", 100)
+	if err != nil {
+		fmt.Println("um erro ocorreu:", err)
+	}
 	fmt.Println("server off.")
 }
