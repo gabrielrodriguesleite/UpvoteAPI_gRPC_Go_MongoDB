@@ -14,11 +14,13 @@ Run `docker-compose up` to turn on services (db)
 
 - [X] MongoDB connection
 
-- [ ] Protobuf definition
+- [X] Protobuf definition
 
-- [ ] gRPC connection
-  - [ ] server definition
-  - [ ] cliente definition
+- [X] gRPC connection
+  - [X] server definition
+  - [X] cliente definition
+
+- [ ] Deployment
 
 - [ ] Tests
 
