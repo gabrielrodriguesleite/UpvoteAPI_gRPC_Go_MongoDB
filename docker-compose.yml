@@ -1,0 +1,20 @@
+# INSTRUÇÕES
+
+# Para subir os serviços:
+# docker-compose up
+
+# Para baixar os serviços:
+# docker-compose down --remove-orphans
+
+version: '3'
+
+services:
+# BANCO DE DADOS MONGO
+  db:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 12345678
+    ports:
+      - 27017:27017
