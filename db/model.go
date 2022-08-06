@@ -32,7 +32,7 @@ func List(collection string) (list []Vote, err error) {
 		fmt.Println(err)
 	}
 
-	cur.All(context.Background(), &list)
+	err = cur.All(context.Background(), &list)
 
 	return
 
