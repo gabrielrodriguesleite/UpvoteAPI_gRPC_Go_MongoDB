@@ -6,9 +6,10 @@ An API for Upvote Write in Go With MongoDB and gRPC technologies
 
 Edit `.env_example` and rename to `.env` passing the database connection info.
 
+
+Install `go 1.18` and update dependencies:
 ```sh
-# install dependencies: go 1.18+
-# update dependencies:
+# update dependencies: go 1.18+
 go mod tidy
 # 
 ```
@@ -51,6 +52,6 @@ go run client/main.go client/client.go
 
 - [ ] Deployment
 
-- [ ] Tests
+- [X] Tests
 
-- [ ] Documentation
+- [X] Documentation
