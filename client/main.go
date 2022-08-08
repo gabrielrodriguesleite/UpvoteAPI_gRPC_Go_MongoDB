@@ -13,7 +13,7 @@ import (
 func main() {
 	fmt.Println("Starting Client...")
 
-	cc, err := grpc.Dial("localhost:50005", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	cc, err := grpc.Dial("localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalf("Could note connect: %v", err)
 	}
