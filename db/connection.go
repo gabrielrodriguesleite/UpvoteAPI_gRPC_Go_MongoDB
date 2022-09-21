@@ -33,10 +33,19 @@ func configMongoURI() {
 	if DB_PASS == "" {
 		DB_PASS = "12345678"
 	}
-	if DB_CLUSTER_URI == "" {
+	if DB_CLUSTER_URI != "" {
 		DB_CLUSTER_URI = fmt.Sprintf("%s:%s", DB_HOST, DB_PORT)
+		MONGO_URI = fmt.Sprintf("mongodb+srv://%s:%s@%s", DB_USER, DB_PASS, DB_CLUSTER_URI)
+	} else {
+		if DB_HOST == "" {
+			DB_HOST = "localhost"
+		}
+		if DB_PORT == "" {
+			DB_PORT = "27017"
+		}
+		MONGO_URI = fmt.Sprintf("mongodb://%s:%s@%s:%s", DB_USER, DB_PASS, DB_HOST, DB_PORT)
+		print(MONGO_URI)
 	}
-	MONGO_URI = fmt.Sprintf("mongodb+srv://%s:%s@%s", DB_USER, DB_PASS, DB_CLUSTER_URI)
 }
 
 // baseado no exemplo do cloud.mongodb na versão do driver 1.6+
