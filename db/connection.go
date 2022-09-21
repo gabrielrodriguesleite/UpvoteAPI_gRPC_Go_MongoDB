@@ -7,7 +7,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/subosito/gotenv"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -20,7 +19,6 @@ var DB_CLUSTER_URI = "" // os.Getenv("DB_CLUSTER")
 var MONGO_URI = ""
 
 func configMongoURI() {
-	gotenv.Load()
 	DB_USER = os.Getenv("DB_USER")
 	DB_PASS = os.Getenv("DB_PASS")
 	DB_HOST = os.Getenv("DB_HOST")
