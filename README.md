@@ -58,3 +58,14 @@ go run client/main.go client/client.go
 - [X] Tests
 
 - [X] Documentation
+---
+```mermaid
+classDiagram
+Browser --|> Client : http 
+Browser : Client http
+Client --|> Server : grpc 
+Client : API http
+Server : grpc
+Server --|> Database
+Database : mongoDB
+```
