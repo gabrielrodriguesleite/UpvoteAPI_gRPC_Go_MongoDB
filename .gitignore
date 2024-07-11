@@ -20,3 +20,5 @@
 vendor/
 server/build/
 client/build/
+
+*.bkp
